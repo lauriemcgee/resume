@@ -1,0 +1,13 @@
+<div>
+  <h3> Things I want to work: </h3>
+  <ul>
+    <li><%= @user.first_name %></li>
+    <li><%= @user.skills.first.skill_name %></li>
+    <li><%= @user.educations.first.school_name %></li>
+    <li><%= @user.educations.first.degree_name %></li>
+      <ul> <% @user.educations.first.education_descriptions.each do |description| %>
+        <li><%= description.description %></li>
+        <% end %>
+      </ul>
+  </ul>
+</div>
