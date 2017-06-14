@@ -1,0 +1,2 @@
+class EducationDescriptionsController < ApplicationController
+end
