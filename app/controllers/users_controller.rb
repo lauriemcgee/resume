@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     )
     if user.save
       flash[:success] = "Successfully created account!"
-      redirect_to '/'
+      redirect_to '/yourresume'
     else
       flash[:warning] = "uh oh"
       redirect_to '/newuser'
